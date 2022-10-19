@@ -5,4 +5,3 @@ Rails.application.routes.draw do
   root 'statics#index'
   get '/api/messages', to: 'statics#greeting'
 end
-
