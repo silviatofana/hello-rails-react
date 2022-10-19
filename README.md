@@ -37,6 +37,21 @@ To get a local copy up and running follow these simple example steps.
 bundle install
 ```
 
+- Run the command bellow in your terminal to set up the database on your local machine
+```
+Rails db:setup
+```
+
+- Run the command bellow in your terminal to create all requiered tables
+```
+Rails db:migrate
+```
+
+- Run the command bellow in your terminal to open the app on your browser
+```
+Rails server
+```
+
 ```
 npm install
 ```
