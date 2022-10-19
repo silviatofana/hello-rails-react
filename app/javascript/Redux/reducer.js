@@ -14,7 +14,7 @@ function greetReducer(state = [], action = {}) {
 }
 
 const fetchMessage = async () => {
-  await axios.get("api/message").then((response) => {
+  await axios.get("api/messages").then((response) => {
     return response.data.greeting;
   });
 };

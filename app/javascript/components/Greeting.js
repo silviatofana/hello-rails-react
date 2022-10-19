@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { ReactDOM } from "react-dom";
-import { getMessage } from "../redux/Reducer";
+import { getMessage } from "../Redux/reducer";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 

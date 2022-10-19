@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import store from "../redux/store";
-import Greeting from "./Greeting";
+import store from "../Redux/store.js";
+import Greeting from "./Greeting.js";
 
 const App = () => {
   return (

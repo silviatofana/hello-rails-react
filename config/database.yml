@@ -10,15 +10,15 @@ default: &default
 
 development:
   <<: *default
-  database: test_app_development
+  database: hello_rails_react_development
 
- test:
+test:
   <<: *default
-  database: test_app_test
+  database: hello_rails_react_test
 
 
 production:
   <<: *default
-  database: test_app_production
-  username: test_app
-  password: <%= ENV["TEST_APP_DATABASE_PASSWORD"] %>
+  database: hello_rails_react_production
+  username: hello_rails_react
+  password: <%= ENV["HELLO_RAILS_REACT_DATABASE_PASSWORD"] %>
