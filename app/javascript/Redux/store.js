@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import greetReducer from "./reducer";
+import greetingReducer, { fetchGreeting } from "../reducer/reducer";
 
 const store = configureStore({
   reducer: {
-    greeting: greetReducer,
+    greeting: greetingReducer,
   },
 });
+
+store.dispatch(fetchGreeting());
 
 export default store;
