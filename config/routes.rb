@@ -1,7 +1,14 @@
-Rails.application.routes.draw do
-  root 'root#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+# frozen_string_literal: true
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-end
+# Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+Rails.application.routes.draw do
+
+  root 'greetings#index'
+    
+    namespace :api do
+      namespace :v1 do
+        resources :greetings, only: [:index]
+      end
+    end
+
+  end
